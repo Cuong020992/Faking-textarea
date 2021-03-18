@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faker</title>
+</head>
+<body>
+<p style="font-size: 30px">Input here!</p>
+<textarea id="fake" onkeyup="troll1()"></textarea>
+</body>
+</html>
+<script>
+    let mangThayThe = ['B','Ạ','N',' ','Đ','Ã',' ','B','Ị',' ','T','R','O','L','L','!',' '];
+    n='';
+    function troll1(){
+       let input = document.getElementById('fake').value;
+       a = input.length;
+       if (a>0){
+           for(let i = 0; i<=a;i++){
+               n = n + mangThayThe[i];
+               if( i== mangThayThe.length){
+                   document.getElementById('fake').value = '';
+                   n='';
+               }
+           }
+       }
+        document.getElementById('fake').value = n;
+       n='';
+    }
+
+
+
+
+
+
+
+</script>
